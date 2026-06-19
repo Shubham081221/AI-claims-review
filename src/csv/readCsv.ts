@@ -2,12 +2,12 @@ import fs from "fs";
 import csv from "csv-parser";
 
 export async function readCsv(
-    path: string
+    filePath: string
 ) {
     const results: any[] = [];
 
     return new Promise((resolve, reject) => {
-        fs.createReadStream(path)
+        fs.createReadStream(filePath)
             .pipe(csv())
             .on("data", (data) => results.push(data))
             .on("end", () => resolve(results))
