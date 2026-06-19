@@ -1,0 +1,884 @@
+{
+  "images/test/case_001/img_1.jpg_broken_part_front bumper and left headlight": {
+    "issueType": "none",
+    "objectPart": "none",
+    "severity": "none",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_001/img_2.jpg_broken_part_front bumper and left headlight": {
+    "issueType": "scratch",
+    "objectPart": "front bumper",
+    "severity": "minor",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_001/img_3.jpg_broken_part_front bumper and left headlight": {
+    "issueType": "none",
+    "objectPart": "none",
+    "severity": "none",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_003/img_1.jpg_dent_door panel": {
+    "issueType": "dent",
+    "objectPart": "door panel",
+    "severity": "minor",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_004/img_1.jpg_glass_shatter_windshield": {
+    "issueType": "glass_shatter",
+    "objectPart": "windshield",
+    "severity": "high",
+    "validImage": true,
+    "riskFlags": [
+      "safety_hazard"
+    ]
+  },
+  "images/test/case_004/img_2.jpg_glass_shatter_windshield": {
+    "issueType": "none",
+    "objectPart": "windshield",
+    "severity": "none",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_005/img_1.jpg_broken_part_side mirror": {
+    "issueType": "none",
+    "objectPart": "side mirror",
+    "severity": "none",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_005/img_2.jpg_broken_part_side mirror": {
+    "issueType": "none",
+    "objectPart": "none",
+    "severity": "none",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_006/img_1.jpg_dent_hood": {
+    "issueType": "dent",
+    "objectPart": "hood",
+    "severity": "high",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_007/img_1.jpg_dent_rear bumper": {
+    "issueType": "dent",
+    "objectPart": "rear door",
+    "severity": "minor",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_007/img_2.jpg_dent_rear bumper": {
+    "issueType": "none",
+    "objectPart": "front bumper",
+    "severity": "none",
+    "validImage": true,
+    "riskFlags": [
+      "incorrect_part_location_claimed"
+    ]
+  },
+  "images/test/case_008/img_1.jpg_broken_part_headlight": {
+    "issueType": "glass_shatter",
+    "objectPart": "headlight",
+    "severity": "high",
+    "validImage": true,
+    "riskFlags": [
+      "tampered_documentation"
+    ]
+  },
+  "images/test/case_008/img_2.jpg_broken_part_headlight": {
+    "issueType": "broken_part",
+    "objectPart": "headlight",
+    "severity": "high",
+    "validImage": true,
+    "riskFlags": [
+      "structural_damage"
+    ]
+  },
+  "images/test/case_010/img_1.jpg_dent_door": {
+    "issueType": "dent",
+    "objectPart": "door",
+    "severity": "major",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_010/img_2.jpg_dent_door": {
+    "issueType": "broken_part",
+    "objectPart": "bumper",
+    "severity": "high",
+    "validImage": true,
+    "riskFlags": [
+      "misalignment",
+      "structural_damage"
+    ]
+  },
+  "images/test/case_010/img_3.jpg_dent_door": {
+    "issueType": "dent",
+    "objectPart": "bumper",
+    "severity": "medium",
+    "validImage": true,
+    "riskFlags": [
+      "paint_damage"
+    ]
+  },
+  "images/test/case_001/img_1.jpg_undefined_undefined": {
+    "issueType": "none",
+    "objectPart": "undefined",
+    "severity": "none",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_001/img_2.jpg_undefined_undefined": {
+    "issueType": "scratch",
+    "objectPart": "rear_bumper",
+    "severity": "medium",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_001/img_3.jpg_undefined_undefined": {
+    "issueType": "none",
+    "objectPart": "null",
+    "severity": "null",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_001/img_1.jpg_broken_part_front_bumper": {
+    "issueType": "none",
+    "objectPart": "front_bumper",
+    "severity": "none",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_001/img_2.jpg_broken_part_front_bumper": {
+    "issueType": "scratch",
+    "objectPart": "front_bumper",
+    "severity": "medium",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_001/img_3.jpg_broken_part_front_bumper": {
+    "issueType": "none",
+    "objectPart": "front_bumper",
+    "severity": "none",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_003/img_1.jpg_dent_door": {
+    "issueType": "dent",
+    "objectPart": "door",
+    "severity": "medium",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_005/img_1.jpg_broken_part_side_mirror": {
+    "issueType": "none",
+    "objectPart": "side_mirror",
+    "severity": "none",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_005/img_2.jpg_broken_part_side_mirror": {
+    "issueType": "none",
+    "objectPart": "wheel",
+    "severity": "none",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_007/img_1.jpg_dent_rear_bumper": {
+    "issueType": "dent",
+    "objectPart": "rear_fender",
+    "severity": "medium",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_007/img_2.jpg_dent_rear_bumper": {
+    "issueType": "none",
+    "objectPart": "front_bumper",
+    "severity": "none",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_011/img_1.jpg_broken_part_taillight": {
+    "issueType": "broken_part",
+    "objectPart": "headlight",
+    "severity": "high",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_014/img_1.jpg_crack_windshield": {
+    "issueType": "crack",
+    "objectPart": "windshield",
+    "severity": "high",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_017/img_1.jpg_crack_screen": {
+    "issueType": "none",
+    "objectPart": "screen",
+    "severity": "none",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_017/img_2.jpg_crack_screen": {
+    "issueType": "glass_shatter",
+    "objectPart": "screen",
+    "severity": "high",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_018/img_1.jpg_water_damage_keyboard": {
+    "issueType": "unknown",
+    "objectPart": "keyboard",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_019/img_1.jpg_crack_screen": {
+    "issueType": "broken_part",
+    "objectPart": "hinge",
+    "severity": "high",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_019/img_2.jpg_crack_screen": {
+    "issueType": "none",
+    "objectPart": "screen",
+    "severity": "none",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_019/img_3.jpg_crack_screen": {
+    "issueType": "none",
+    "objectPart": "screen",
+    "severity": "none",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_020/img_1.jpg_crack_trackpad": {
+    "issueType": "crack",
+    "objectPart": "trackpad",
+    "severity": "none",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_025/img_1.jpg_missing_part_keyboard_keys": {
+    "issueType": "none",
+    "objectPart": "keyboard_keys",
+    "severity": "none",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_025/img_2.jpg_missing_part_keyboard_keys": {
+    "issueType": "missing_part",
+    "objectPart": "keyboard_keys",
+    "severity": "medium",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_026/img_1.jpg_crack_outer_body": {
+    "issueType": "glass_shatter",
+    "objectPart": "screen",
+    "severity": "high",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_027/img_1.jpg_stain_screen": {
+    "issueType": "stain",
+    "objectPart": "screen",
+    "severity": "high",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_027/img_2.jpg_stain_screen": {
+    "issueType": "stain",
+    "objectPart": "screen",
+    "severity": "none",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_028/img_1.jpg_broken_part_hinge": {
+    "issueType": "broken_part",
+    "objectPart": "hinge",
+    "severity": "high",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_029/img_1.jpg_crushed_packaging_corner": {
+    "issueType": "crushed_packaging",
+    "objectPart": "corner",
+    "severity": "high",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_029/img_2.jpg_crushed_packaging_corner": {
+    "issueType": "crushed_packaging",
+    "objectPart": "corner",
+    "severity": "medium",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_030/img_1.jpg_torn_packaging_package": {
+    "issueType": "torn_packaging",
+    "objectPart": "package",
+    "severity": "high",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_031/img_1.jpg_water_damage_delivery_box": {
+    "issueType": "water_damage",
+    "objectPart": "delivery_box",
+    "severity": "medium",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_031/img_2.jpg_water_damage_delivery_box": {
+    "issueType": "water_damage",
+    "objectPart": "delivery_box",
+    "severity": "medium",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_031/img_3.jpg_water_damage_delivery_box": {
+    "issueType": "water_damage",
+    "objectPart": "delivery_box",
+    "severity": "medium",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_032/img_1.jpg_missing_part_product": {
+    "issueType": "torn_packaging",
+    "objectPart": "packaging",
+    "severity": "medium",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_032/img_2.jpg_missing_part_product": {
+    "issueType": "none",
+    "objectPart": "product",
+    "severity": "none",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_034/img_1.jpg_torn_packaging_shipping_label": {
+    "issueType": "crushed_packaging",
+    "objectPart": "shipping_box",
+    "severity": "high",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_034/img_2.jpg_torn_packaging_shipping_label": {
+    "issueType": "torn_packaging",
+    "objectPart": "shipping_label",
+    "severity": "medium",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_036/img_1.jpg_water_damage_delivery box": {
+    "issueType": "water_damage",
+    "objectPart": "delivery box",
+    "severity": "medium",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_036/img_2.jpg_water_damage_delivery box": {
+    "issueType": "water_damage",
+    "objectPart": "delivery box",
+    "severity": "unknown",
+    "validImage": false,
+    "riskFlags": [
+      "claim_text_only"
+    ]
+  },
+  "images/test/case_037/img_1.jpg_crushed_packaging_package": {
+    "issueType": "crushed_packaging",
+    "objectPart": "package",
+    "severity": "high",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_038/img_1.jpg_broken_part_item": {
+    "issueType": "crushed_packaging",
+    "objectPart": "item",
+    "severity": "high",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_038/img_2.jpg_broken_part_item": {
+    "issueType": "broken_part",
+    "objectPart": "item",
+    "severity": "high",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_039/img_1.jpg_stain_packaging": {
+    "issueType": "stain",
+    "objectPart": "packaging",
+    "severity": "high",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_040/img_1.jpg_torn_packaging_package": {
+    "issueType": "torn_packaging",
+    "objectPart": "package",
+    "severity": "medium",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_040/img_2.jpg_torn_packaging_package": {
+    "issueType": "none",
+    "objectPart": "package",
+    "severity": "none",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_040/img_3.jpg_torn_packaging_package": {
+    "issueType": "none",
+    "objectPart": "package",
+    "severity": "none",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_041/img_1.jpg_broken_part_front_bumper": {
+    "issueType": "broken_part",
+    "objectPart": "front_bumper",
+    "severity": "medium",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_041/img_2.jpg_broken_part_front_bumper": {
+    "issueType": "none",
+    "objectPart": "front_bumper",
+    "severity": "none",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_041/img_3.jpg_broken_part_front_bumper": {
+    "issueType": "broken_part",
+    "objectPart": "front_bumper",
+    "severity": "high",
+    "validImage": true,
+    "riskFlags": [
+      "major_damage"
+    ]
+  },
+  "images/test/case_042/img_1.jpg_crack_rear_bumper": {
+    "issueType": "broken_part",
+    "objectPart": "rear_bumper",
+    "severity": "high",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_042/img_2.jpg_crack_rear_bumper": {
+    "issueType": "broken_part",
+    "objectPart": "rear_bumper",
+    "severity": "high",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_043/img_1.jpg_broken_part_car_body_panel": {
+    "issueType": "broken_part",
+    "objectPart": "car_body_panel",
+    "severity": "high",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_044/img_1.jpg_crack_screen": {
+    "issueType": "crack",
+    "objectPart": "screen",
+    "severity": "high",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_044/img_2.jpg_crack_screen": {
+    "issueType": "glass_shatter",
+    "objectPart": "screen",
+    "severity": "high",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_045/img_1.jpg_crack_lid": {
+    "issueType": "glass_shatter",
+    "objectPart": "screen",
+    "severity": "high",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_045/img_2.jpg_crack_lid": {
+    "issueType": "none",
+    "objectPart": "lid",
+    "severity": "none",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_047/img_1.jpg_dent_left_side_door": {
+    "issueType": "dent",
+    "objectPart": "left_side_door",
+    "severity": "high",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_047/img_2.jpg_dent_left_side_door": {
+    "issueType": "none",
+    "objectPart": "left_side_door",
+    "severity": "none",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_046/img_1.jpg_broken_part_left_side_mirror": {
+    "issueType": "broken_part",
+    "objectPart": "left_side_mirror",
+    "severity": "high",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_046/img_2.jpg_broken_part_left_side_mirror": {
+    "issueType": "none",
+    "objectPart": "left_side_mirror",
+    "severity": "none",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_048/img_1.jpg_crushed_packaging_box": {
+    "issueType": "unknown",
+    "objectPart": "box",
+    "severity": "none",
+    "validImage": true,
+    "riskFlags": [
+      "claim_mismatch"
+    ]
+  },
+  "images/test/case_048/img_2.jpg_crushed_packaging_box": {
+    "issueType": "crushed_packaging",
+    "objectPart": "box",
+    "severity": "high",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_049/img_1.jpg_unknown_rear_bumper": {
+    "issueType": "none",
+    "objectPart": "rear_bumper",
+    "severity": "none",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_049/img_2.jpg_unknown_rear_bumper": {
+    "issueType": "unknown",
+    "objectPart": "rear_bumper",
+    "severity": "none",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_050/img_1.jpg_crack_laptop_screen": {
+    "issueType": "none",
+    "objectPart": "laptop_screen",
+    "severity": "none",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_050/img_2.jpg_crack_laptop_screen": {
+    "issueType": "none",
+    "objectPart": "laptop_screen",
+    "severity": "none",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_051/img_1.jpg_dent_car_door": {
+    "issueType": "none",
+    "objectPart": "car_door",
+    "severity": "none",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_051/img_2.jpg_dent_car_door": {
+    "issueType": "dent",
+    "objectPart": "car_door",
+    "severity": "high",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_051/img_3.jpg_dent_car_door": {
+    "issueType": "none",
+    "objectPart": "car_door",
+    "severity": "none",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_052/img_1.jpg_crushed_packaging_cardboard_box_corner": {
+    "issueType": "torn_packaging",
+    "objectPart": "packaging",
+    "severity": "medium",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_052/img_2.jpg_crushed_packaging_cardboard_box_corner": {
+    "issueType": "crushed_packaging",
+    "objectPart": "cardboard_box_corner",
+    "severity": "medium",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_053/img_1.jpg_missing_part_keyboard_key": {
+    "issueType": "missing_part",
+    "objectPart": "keyboard_key",
+    "severity": "medium",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_053/img_2.jpg_missing_part_keyboard_key": {
+    "issueType": "missing_part",
+    "objectPart": "keyboard_key",
+    "severity": "medium",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_054/img_1.jpg_scratch_front_bumper": {
+    "issueType": "scratch",
+    "objectPart": "rear_fender",
+    "severity": "medium",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_055/img_1.jpg_torn_packaging_seal": {
+    "issueType": "torn_packaging",
+    "objectPart": "seal",
+    "severity": "high",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_055/img_2.jpg_torn_packaging_seal": {
+    "issueType": "none",
+    "objectPart": "null",
+    "severity": "null",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_056/img_1.jpg_dent_laptop_corner": {
+    "issueType": "unknown",
+    "objectPart": "laptop_corner",
+    "severity": "unknown",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/test/case_056/img_2.jpg_dent_laptop_corner": {
+    "issueType": "dent",
+    "objectPart": "laptop_corner",
+    "severity": "medium",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/sample/case_001/img_1.jpg_dent_rear_bumper": {
+    "issueType": "broken_part",
+    "objectPart": "rear_bumper",
+    "severity": "high",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/sample/case_002/img_1.jpg_scratch_front_bumper": {
+    "issueType": "broken_part",
+    "objectPart": "front_bumper",
+    "severity": "medium",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/sample/case_002/img_2.jpg_scratch_front_bumper": {
+    "issueType": "none",
+    "objectPart": "front_bumper",
+    "severity": "none",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/sample/case_003/img_1.jpg_crack_windshield": {
+    "issueType": "glass_shatter",
+    "objectPart": "windshield",
+    "severity": "high",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/sample/case_003/img_2.jpg_crack_windshield": {
+    "issueType": "none",
+    "objectPart": "windshield",
+    "severity": "none",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/sample/case_004/img_1.jpg_broken_part_side_mirror": {
+    "issueType": "glass_shatter",
+    "objectPart": "side_mirror",
+    "severity": "high",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/sample/case_005/img_1.jpg_unknown_back_bumper": {
+    "issueType": "dent",
+    "objectPart": "back_bumper",
+    "severity": "medium",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/sample/case_005/img_2.jpg_unknown_back_bumper": {
+    "issueType": "unknown",
+    "objectPart": "back_bumper",
+    "severity": "none",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/sample/case_006/img_1.jpg_crack_headlight": {
+    "issueType": "unknown",
+    "objectPart": "unknown",
+    "severity": "none",
+    "validImage": false,
+    "riskFlags": [
+      "not_visibile"
+    ]
+  },
+  "images/sample/case_007/img_1.jpg_dent_door_panel": {
+    "issueType": "unknown",
+    "objectPart": "null",
+    "severity": "null",
+    "validImage": false,
+    "riskFlags": [
+      "blurry"
+    ]
+  },
+  "images/sample/case_007/img_2.jpg_dent_door_panel": {
+    "issueType": "dent",
+    "objectPart": "door_panel",
+    "severity": "medium",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/sample/case_008/img_1.jpg_scratch_hood": {
+    "issueType": "unknown",
+    "objectPart": "hood",
+    "severity": "high",
+    "validImage": true,
+    "riskFlags": [
+      "damaged_part"
+    ]
+  },
+  "images/sample/case_009/img_1.jpg_crack_screen": {
+    "issueType": "glass_shatter",
+    "objectPart": "screen",
+    "severity": "high",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/sample/case_010/img_1.jpg_broken_part_hinge": {
+    "issueType": "broken_part",
+    "objectPart": "hinge",
+    "severity": "high",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/sample/case_010/img_2.jpg_broken_part_hinge": {
+    "issueType": "unknown",
+    "objectPart": "hinge",
+    "severity": "unknown",
+    "validImage": false,
+    "riskFlags": [
+      "not_detectable_issue"
+    ]
+  },
+  "images/sample/case_011/img_1.jpg_water_damage_keyboard": {
+    "issueType": "water_damage",
+    "objectPart": "keyboard",
+    "severity": "high",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/sample/case_012/img_1.jpg_dent_laptop": {
+    "issueType": "none",
+    "objectPart": "laptop",
+    "severity": "none",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/sample/case_012/img_2.jpg_dent_laptop": {
+    "issueType": "dent",
+    "objectPart": "laptop",
+    "severity": "medium",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/sample/case_013/img_1.jpg_glass_shatter_screen": {
+    "issueType": "glass_shatter",
+    "objectPart": "screen",
+    "severity": "high",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/sample/case_014/img_1.jpg_broken_part_trackpad": {
+    "issueType": "broken_part",
+    "objectPart": "trackpad",
+    "severity": "high",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/sample/case_015/img_1.jpg_crushed_packaging_corner": {
+    "issueType": "crushed_packaging",
+    "objectPart": "corner",
+    "severity": "medium",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/sample/case_016/img_1.jpg_torn_packaging_packaging": {
+    "issueType": "torn_packaging",
+    "objectPart": "packaging",
+    "severity": "medium",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/sample/case_016/img_2.jpg_torn_packaging_packaging": {
+    "issueType": "none",
+    "objectPart": "packaging",
+    "severity": "none",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/sample/case_017/img_1.jpg_water_damage_packaging": {
+    "issueType": "water_damage",
+    "objectPart": "packaging",
+    "severity": "medium",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/sample/case_018/img_1.jpg_missing_part_product": {
+    "issueType": "missing_part",
+    "objectPart": "product",
+    "severity": "high",
+    "validImage": true,
+    "riskFlags": [
+      "item_not_visible"
+    ]
+  },
+  "images/sample/case_018/img_2.jpg_missing_part_product": {
+    "issueType": "unknown",
+    "objectPart": "product",
+    "severity": "none",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/sample/case_019/img_1.jpg_crushed_packaging_shipping_box": {
+    "issueType": "dent",
+    "objectPart": "can",
+    "severity": "medium",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/sample/case_020/img_1.jpg_torn_packaging_delivery_box": {
+    "issueType": "torn_packaging",
+    "objectPart": "delivery_box",
+    "severity": "high",
+    "validImage": true,
+    "riskFlags": []
+  },
+  "images/sample/case_020/img_2.jpg_torn_packaging_delivery_box": {
+    "issueType": "none",
+    "objectPart": "delivery_box",
+    "severity": "none",
+    "validImage": true,
+    "riskFlags": []
+  }
+}

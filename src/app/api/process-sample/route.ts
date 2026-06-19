@@ -1,18 +1,15 @@
-import { loadDataset } from "@/csv/loadDataset";
+import { loadSampleDataset } from "@/csv/loadSampleDataset";
 import { reviewClaim } from "@/agents/reviewClaim";
-import { writeOutput } from "@/csv/writeOutput";
+import { writeSampleOutput } from "@/csv/writeSampleOutput";
 
 export async function GET() {
 
-  const data: any =
-    await loadDataset();
+  const data =
+    await loadSampleDataset();
 
   const results = [];
 
-  // Use slice(0,3) first for testing
-  for (
-    const claim of data.claims
-  ) {
+  for (const claim of data.claims) {
 
     const result =
       await reviewClaim(
@@ -23,11 +20,12 @@ export async function GET() {
     results.push(result);
   }
 
-  await writeOutput(results);
+  await writeSampleOutput(results);
 
   return Response.json({
     success: true,
     rows: results.length,
-    file: "output.csv",
+    file:
+      "evaluation/sample_results.csv",
   });
 }

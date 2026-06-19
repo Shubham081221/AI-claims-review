@@ -18,17 +18,18 @@ unknown
 
 Inspect the image carefully.
 
-Return JSON only:
+Return ONLY valid JSON.
+
+Example:
 
 {
-  "issueType": "",
-  "objectPart": "",
-  "severity": "",
+  "issueType": "scratch",
+  "objectPart": "front_bumper",
+  "severity": "low",
   "validImage": true,
   "riskFlags": []
 }
 
 Do not return markdown.
-Do not explain.
-Return JSON only.
+Do not return explanations.
 `;

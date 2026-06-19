@@ -123,7 +123,7 @@ return {
       : "Insufficient visual evidence.",
 
   supporting_image_ids:
-    decision.supportingImageId,
+    decision.supportingImageId || "none",
 
   valid_image:
     imageResults.some(
@@ -131,6 +131,6 @@ return {
     ),
 
   severity:
-    decision.severity
+    decision.severity || "unknown"
 };
 }
