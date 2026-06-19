@@ -5,7 +5,7 @@ export async function extractClaim(
     userClaim: string
 ) {
     const response = await gemini.models.generateContent({
-        model: "gemini-3.1-flash-lite",
+        model: "gemini-3-flash",
         contents: `
         ${CLAIM_PROMPT}
         

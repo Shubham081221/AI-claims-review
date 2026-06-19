@@ -38,7 +38,7 @@ export async function analyzeImage(
                `;
 
     const response = await gemini.models.generateContent({
-        model: "gemini-3.1-flash-lite",
+        model: "gemini-3-flash",
 
         contents: [
             {

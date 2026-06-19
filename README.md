@@ -1,36 +1,210 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI Claims Review System
 
-## Getting Started
+## Overview
 
-First, run the development server:
+AI-powered claim verification system that reviews damage claims using:
+
+* Images (primary source of truth)
+* User claim conversation
+* User history
+* Evidence requirements
+
+The system analyzes claims involving:
+
+* Car damage
+* Laptop damage
+* Package damage
+
+and generates a structured `output.csv` containing claim review decisions.
+
+---
+
+## Architecture
+
+```text
+Claims CSV
+    ↓
+Claim Extraction Agent
+    ↓
+Vision Analysis Agent
+    ↓
+Evidence Validation Agent
+    ↓
+Risk Assessment Agent
+    ↓
+Decision Engine
+    ↓
+Output CSV Generator
+```
+
+### Components
+
+#### Claim Agent
+
+Extracts:
+
+* issue_type
+* object_part
+
+from the user conversation using Gemini.
+
+#### Vision Agent
+
+Analyzes submitted images and identifies:
+
+* visible damage
+* object part
+* severity
+* image quality
+
+#### Evidence Agent
+
+Checks whether submitted images meet the minimum evidence requirements defined in:
+
+```text
+dataset/evidence_requirements.csv
+```
+
+#### Risk Agent
+
+Adds contextual risk flags from:
+
+```text
+dataset/user_history.csv
+```
+
+#### Decision Engine
+
+Determines:
+
+* supported
+* contradicted
+* not_enough_information
+
+---
+
+## Tech Stack
+
+### Frontend / Backend
+
+* Next.js 16
+* TypeScript
+
+### AI
+
+* Gemini 2.5 Flash
+
+### Data
+
+* CSV datasets
+* Local image processing
+
+### Output
+
+* csv-writer
+
+---
+
+## Project Structure
+
+```text
+src/
+├── agents/
+│   ├── claim_agent.ts
+│   ├── vision-agent.ts
+│   ├── analyzeImages.ts
+│   ├── evidence-agent.ts
+│   ├── risk-agent.ts
+│   ├── decision-engine.ts
+│   └── reviewClaim.ts
+│
+├── prompts/
+│   ├── ClaimPrompt.ts
+│   └── VisionPrompt.ts
+│
+├── csv/
+│   ├── readCsv.ts
+│   ├── loadDataset.ts
+│   └── writeOutput.ts
+│
+└── app/api/
+```
+
+---
+
+## Installation
+
+```bash
+npm install
+```
+
+Create:
+
+```env
+GEMINI_API_KEY=your_api_key
+```
+
+---
+
+## Run
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Generate Output
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```text
+/api/process-all
+```
 
-## Learn More
+Processes all claims.
 
-To learn more about Next.js, take a look at the following resources:
+```text
+/api/generate-output
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Generates:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```text
+output.csv
+```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Output Schema
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Generated CSV contains:
+
+* user_id
+* image_paths
+* user_claim
+* claim_object
+* evidence_standard_met
+* evidence_standard_met_reason
+* risk_flags
+* issue_type
+* object_part
+* claim_status
+* claim_status_justification
+* supporting_image_ids
+* valid_image
+* severity
+
+---
+
+## Evaluation
+
+The system is evaluated using:
+
+```text
+dataset/sample_claims.csv
+```
+
+Results and operational analysis are available in:
+
+```text
+evaluation/evaluation_report.md
+```

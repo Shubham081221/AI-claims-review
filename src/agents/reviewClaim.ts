@@ -1,5 +1,8 @@
 import { extractClaim } from "./claim_agent";
 import { analyzeImages } from "./analyzeImages";
+import { decideClaim } from "./decision-engine";
+import { checkEvidence } from "./evidence-agent";
+import { buildRiskFlags } from "./risk-agent";
 
 export async function reviewClaim(
   claim: any,
@@ -18,6 +21,13 @@ export async function reviewClaim(
     extracted.objectPart
   );
 
+  const evidence =
+  checkEvidence(
+    claim.claim_object,
+    extracted.issueType,
+    imageResults
+  );
+
   console.log(
   JSON.stringify(
     imageResults,
@@ -31,39 +41,96 @@ export async function reviewClaim(
       h => h.user_id === claim.user_id
     );
 
-  const supportingImage =
-    imageResults.find(
-      img =>
-        img.issueType ===
-        extracted.issueType
-    );
+  // const supportingImage =
+  //   imageResults.find(
+  //     img =>
+  //       img.issueType ===
+  //       extracted.issueType
+  //   );
 
-  const claimStatus =
-    supportingImage
-      ? "supported"
-      : "not_enough_information";
+  // const claimStatus =
+  //   supportingImage
+  //     ? "supported"
+  //     : "not_enough_information";
 
-  return {
-    user_id: claim.user_id,
-    image_paths: claim.image_paths,
-    claim_object: claim.claim_object,
+  const decision = decideClaim(
+  extracted,
+  imageResults
+);
 
-    issue_type:
-      extracted.issueType,
+//   return {
+//     user_id: claim.user_id,
+//     image_paths: claim.image_paths,
+//     claim_object: claim.claim_object,
 
-    object_part:
-      extracted.objectPart,
+//     issue_type:
+//       extracted.issueType,
 
-    claim_status:
-      claimStatus,
+//     object_part:
+//       extracted.objectPart,
 
-    supporting_image_ids:
-      supportingImage
-        ? supportingImage.imagePath
-        : "none",
+//     claim_status:
+//       claimStatus,
 
-    risk_flags:
-      userHistory?.history_flags ??
-      "none",
-  };
+//     supporting_image_ids:
+//       supportingImage
+//         ? supportingImage.imagePath
+//         : "none",
+
+//     risk_flags:
+//       userHistory?.history_flags ??
+//       "none",
+//   };
+
+
+return {
+  user_id: claim.user_id,
+
+  image_paths: claim.image_paths,
+
+  user_claim: claim.user_claim,
+
+  claim_object: claim.claim_object,
+
+  evidence_standard_met:
+    evidence.evidenceStandardMet,
+
+  evidence_standard_met_reason:
+    evidence.reason,
+
+  risk_flags:
+    buildRiskFlags(
+    imageResults,
+    userHistory?.history_flags
+  ),
+
+  issue_type:
+    extracted.issueType,
+
+  object_part:
+    extracted.objectPart,
+
+  claim_status:
+    decision.claimStatus,
+
+  claim_status_justification:
+    decision.claimStatus ===
+    "supported"
+      ? "Image evidence matches the claim."
+      : decision.claimStatus ===
+        "contradicted"
+      ? "Visible evidence conflicts with the claim."
+      : "Insufficient visual evidence.",
+
+  supporting_image_ids:
+    decision.supportingImageId,
+
+  valid_image:
+    imageResults.some(
+      img => img.validImage
+    ),
+
+  severity:
+    decision.severity
+};
 }
